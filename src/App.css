@@ -1,0 +1,132 @@
+
+h2{
+  text-align: center;
+}
+
+.navbar {
+  padding: 20px;
+  background-color: #efefef;
+}
+
+nav {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 940px;
+}
+
+nav ul {
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+nav ul li {
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin-right: 10px;
+  min-width: 3em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  vertical-align: middle;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: 0 0;
+  padding: .92857143em 1.14285714em;
+  text-transform: none;
+  color: rgba(0,0,0,.87);
+  font-weight: 400;
+  -webkit-transition: background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
+  transition: background .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
+  transition: background .1s ease,box-shadow .1s ease,color .1s ease;
+  transition: background .1s ease,box-shadow .1s ease,color .1s ease,-webkit-box-shadow .1s ease;
+}
+
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  max-width: 940px;
+  grid-gap: 60px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+i.icon {
+  display: inline !important;
+}
+
+.title {
+  overflow-x: hidden;
+  width: 260px;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 992px) {
+  .card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+.ui.card:first-child {
+  margin-top: 0;
+}
+
+.ui.card {
+  margin-bottom: 20px;
+  margin: 0 auto 20px auto !important;
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+  word-wrap: break-word;
+}
+
+.ui.card, .ui.cards>.card {
+  width: 230px;
+}
